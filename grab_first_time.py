@@ -16,5 +16,7 @@ baseurl = "https://www.ncei.noaa.gov/cdo-web/api/v2"
 url = 'https://api.weather.gov/gridpoints/MPX/107,71/forecast/hourly'
 
 response=requests.get(url)
-response.json()["properties"]["periods"][0]
+nowstime = response.json()["properties"]["periods"][0]["startTime"]
+
+print (nowstime)
 
