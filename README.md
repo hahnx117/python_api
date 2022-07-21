@@ -1,2 +1,3 @@
 # python_api
-Transit api excercise.
+Weather checking exercise
+
