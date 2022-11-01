@@ -43,3 +43,8 @@ while requesteddate != "exit":
     #print ("Dusk today is at "+nowsdusk)
     requesteddate = input('Please enter the date you would like to retrieve temperatures for (YYYY-MM-DD), or type "exit" to leave: ')
 
+    with open("html/index.html", "w") as f:
+        f.write(f'The dusk time on {requesteddate} is {mspduskdate}<br>')
+        f.write(f'\n')
+        f.write(f'The temperature is: {nowstemp}  {nowstempunit} - {nowstime}\n')
+        f.close()
