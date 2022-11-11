@@ -16,7 +16,6 @@ import datetime
 #loop until user inputs 'exit' command
 requesteddate = input('Please enter the date you would like to retrieve temperatures for (YYYY-MM-DD), or type "exit" to leave: ')
 while requesteddate != "exit":
-    
     baseurl2 = 'http://api.sunrise-sunset.org/json'
     data = {'lat':44.9778,'lng':'-93.2650','date':requesteddate}
     response2=requests.get(baseurl2,params=data)
@@ -48,3 +47,4 @@ while requesteddate != "exit":
         f.write(f'\n')
         f.write(f'The temperature is: {nowstemp}  {nowstempunit} - {nowstime}\n')
         f.close()
+        
