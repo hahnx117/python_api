@@ -1,7 +1,7 @@
 from pprint import pprint
 import requests
-from bs4 import BeautifulSoup
-import json
+# from bs4 import BeautifulSoup
+# import json
 import datetime
 
 ## First, grab the object to get the hourly forecast URL from
